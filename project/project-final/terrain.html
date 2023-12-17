@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalanche Terrain</title>
+    
+    <style> 
+        .terrain-image {
+            display: block; 
+            width: 30%; 
+            height: auto;
+            max-width: 100%; 
+            margin: 20px 0 20px auto; /* Reduced margin */
+            clear: both; 
+        }
+
+        .challengeterrain-image { 
+            display: block; 
+            width: 50%; 
+            height: auto;
+            max-width: 100%; 
+            margin: 20px 0 20px auto; /* Reduced margin */
+            clear: both;
+        }
+
+        nav {
+            text-align: right; 
+        }
+
+        .intro, .paths, .image-text {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border: 5px solid #333333;
+            margin-top: 40px;
+            border-radius: 60px;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .paths { 
+            text-align: justify;
+        }
+    
+        .image-text-container {
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; 
+            margin-bottom: 30px; 
+        }
+
+        .image-text {
+            flex: 1; 
+            margin-right: 20px; 
+        }
+
+        .super {
+            display: block; 
+            text-align: center; 
+            margin-top: 5px; 
+        }
+        @media screen and (max-width: 600px) {
+            .terrain-image, .challengeterrain-image {
+                width: 80%; 
+                margin: 20px auto; 
+            }
+
+            .image-text-container {
+                flex-direction: column; 
+                align-items: flex-start; 
+            }
+
+            .image-text {
+                margin-right: 0; 
+                margin-bottom: 20px; 
+            }
+
+            .image-with-caption {
+                text-align: left; 
+            }
+            
+            .skip {
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+
+        
+        body {
+            font-size: 16px; 
+            line-height: 1.5; 
+        }
+    </style>
+    <link rel="stylesheet" href="finalstyle.css">
+    
+</head>
+<body>
+    <a href="#main" class="skip" tabindex="1">Skip to Content</a>
+    <header>
+        <h1>Examining Avalanche Terrain</h1>
+    </header>
+    <main>
+        <h2 id="main" class="intro">Analyzing the terrain around you is the easiest way to avoid getting caught in an avalanche. On this page, we will discuss a few things to look for when out in the backcountry.</h2>
+        <div class="paths">
+            <h2>Avalanche Paths</h2>
+            <p>Recognizing dangerous terrain is key when you're in the backcountry. The clearest sign of danger is a visible avalanche path. If you see a path where the trees are thinned out, it's best to avoid that area. Sometimes, avalanche paths are not as obvious. Keep an eye out for broken tree limbs, areas with lots of fallen trees, large snow piles, or snow stuck on the uphill side of trees. These signs indicate that you might be near an avalanche path, and it's safer to stay away.</p>
+            <h2>Slopes</h2>
+            <p>Almost all avalanches happen on slopes steeper than 30 degrees. Most smartphone mapping apps can tell you the slope angle of the terrain you're on. Remember, even if just a small part of the slope is over 30 degrees, the risk of an avalanche goes up. It's important to keep this in mind for your safety when you're in the backcountry.<sup>4</sup></p>
+        </div>
+
+        <div class="image-text-container">
+            <div class="image-text">
+                <h2>Simple Terrain</h2>
+                <p>Areas known as 'simple' terrain are normally under 30-degree slopes and have lots of obstacles like trees. Tree cover can often mean you're not in an area prone to avalanches. It's a good idea to stick to these mellow, tree-filled spots, especially if you're not quite sure about the stability of the snowpack or if you're new to exploring this kind of terrain, or you're out with people who are just starting to learn about avalanche safety.<sup>4</sup></p>
+            </div>
+            <img src="../project-media/simple.PNG" alt="an example of simple terrain" class="terrain-image">
+        </div>
+
+        <div class="image-text-container">
+            <div class="image-text">
+                <h2>Challenging Terrain</h2>
+                <p>Challenging terrain is slightly more risky than simple terrain. With this kind of terrain, you will be more exposed to possible avalanche paths although still have some natural barriers to protect yourself. This kind of terrain is best chosen if you are slightly more confident in the snowpack though are still wary.<sup>4</sup></p>
+            </div>
+            <div class="image-with-caption">
+                <img src="../project-media/challenge.PNG" alt="an example of challenging terrain" class="challengeterrain-image">
+                <sup class="super">5</sup>
+            </div>
+        </div>
+
+        <div class="image-text-container">
+            <div class="image-text">
+                <h2>Complex Terrain</h2>
+                <p>Complex terrain will have very few natural barriers, steep faces, and will often cross over avalanche chutes. In short, it has the highest safety risk compared to other options. This kind of terrain is best chosen when traveling with expert backcountry skiers who can confidently assess the snowpack's stability.<sup>4</sup></p>
+            </div>
+            <img src="../project-media/complex.PNG" alt="an example of complex terrain" class="terrain-image">
+        </div>
+    </main>
+    <footer>
+        <sup>4</sup> <a href="https://avtraining.org/topic/identifying-avalanche-terrain/" class="cited">AIARE, Identifying Avalanche Terrain</a>
+    </footer>
+</body>
+</html>
